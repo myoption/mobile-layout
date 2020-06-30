@@ -1,0 +1,14 @@
+html {
+  font-size: 36px;
+}
+div {
+  float: left;
+  width: 50%;
+  height: 5rem;
+}
+div:nth-child(1) {
+  background-color: teal;
+}
+div:nth-child(2) {
+  background-color: violet;
+}

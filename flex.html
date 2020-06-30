@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .flex {
+        /* 给父级添加flex属性 */
+        display: flex;
+        width: 600px;
+        height: 600px;
+        background-color: tomato;
+        /* 元素根据主轴来排列 */
+        /* flex-direction: column-reverse; */
+        /* justify-content 设置主轴上元素的排列方式 */
+        justify-content: center;
+        /* space-between先两边贴边再分配 */
+        align-content: center;
+        flex-wrap: wrap;
+      }
+
+      div span {
+        height: 150px;
+        background-color: purple;
+        margin-right: 5px;
+      }
+      span:nth-child(1) {
+        flex: 1;
+      }
+      span:nth-child(2) {
+        width: 50%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="flex">
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+      <span>5</span>
+    </div>
+  </body>
+</html>

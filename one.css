@@ -1,0 +1,6 @@
+div {
+  background-color: purple;
+}
+div:hover {
+  background-color: pink;
+}

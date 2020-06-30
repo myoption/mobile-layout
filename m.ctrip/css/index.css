@@ -1,0 +1,335 @@
+body {
+  width: 100%;
+  max-width: 540px;
+  min-width: 320px;
+  margin: 0 auto;
+  height: 100%;
+  overflow-x: hidden;
+  font: 400 16px/1.5 PingFangSC-regular, Tahoma, "Lucida Grande", Verdana,
+    "Microsoft Yahei", STXihei, hei;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: none;
+  -moz-user-select: none;
+  background: #fafafc;
+  box-sizing: border-box;
+}
+/* 顶部广告 */
+.ad {
+  position: relative;
+  margin-top: -70px;
+  width: 100%;
+  height: 323px;
+  background: url(../upload/ad.jpg) no-repeat;
+  background-size: 100% 100%;
+  border-radius: 0 0 38px 38px;
+}
+
+/* 搜索栏 */
+.search_tab {
+  position: fixed;
+  display: flex;
+  top: 0;
+  width: 100%;
+  max-width: 540px;
+  height: 44px;
+  justify-content: flex-end;
+  align-items: center;
+}
+.search {
+  position: relative;
+  flex: 1;
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-left: 8px;
+}
+.search input {
+  flex: 0.97;
+  outline: none;
+  border: none;
+  margin-left: 35px;
+}
+.search::before {
+  position: absolute;
+  top: 2px;
+  left: 15px;
+  content: "";
+  width: 35px;
+  height: 100%;
+  background: url(../images/home-common-sprite2x@v7.15.png) no-repeat;
+  background-size: 21px auto;
+}
+.search_tab .login {
+  display: flex;
+  position: relative;
+  width: 51px;
+  height: 44px;
+  margin-right: 5px;
+  text-decoration: none;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.search_tab .login span {
+  color: #fff;
+  align-self: center;
+  font-size: 12px;
+}
+.search_tab .login span::before {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: 6px;
+  left: 15px;
+  content: "";
+  background: url(../images/home-common-sprite2x@v7.15.png) no-repeat 0 -36px;
+  background-size: 21px 123px;
+}
+/* 导航 */
+nav {
+  position: absolute;
+  bottom: -20px;
+  left: 3%;
+  width: 94%;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+nav .nav_content {
+  /* background-color: coral; */
+  display: flex;
+  height: 64px;
+  margin: 3px 0;
+}
+
+nav .nav_content .nav_item {
+  justify-content: left;
+  width: 20%;
+  height: 100%;
+  /* background-color: coral; */
+}
+nav .nav_content .nav_item a {
+  display: flex;
+  margin-top: 6px;
+  width: 100%;
+  height: 52px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+nav .nav_content .nav_item:nth-child(1) span:nth-child(1) {
+  width: 40px;
+  height: 40px;
+  background: url(../images/home-fivemain-sprite2x@v7.15.png) 0 -3px no-repeat;
+  background-size: 40px auto;
+}
+nav .nav_content .nav_item span {
+  font-size: 12px;
+  color: #222;
+}
+nav .nav_content .nav_item:nth-child(2) span:nth-child(1) {
+  width: 40px;
+  height: 40px;
+  background: url(../images/home-fivemain-sprite2x@v7.15.png) -2px -43px
+    no-repeat;
+  background-size: 40px auto;
+}
+nav .nav_content .nav_item:nth-child(3) span:nth-child(1) {
+  width: 40px;
+  height: 40px;
+  background: url(../images/home-fivemain-sprite2x@v7.15.png) -2px -80px
+    no-repeat;
+  background-size: 40px auto;
+}
+nav .nav_content .nav_item:nth-child(4) span:nth-child(1) {
+  width: 40px;
+  height: 40px;
+  background: url(../images/home-fivemain-sprite2x@v7.15.png) -2px -120px
+    no-repeat;
+  background-size: 40px auto;
+}
+nav .nav_content .nav_item:nth-child(5) span:nth-child(1) {
+  width: 40px;
+  height: 40px;
+  background: url(../images/home-fivemain-sprite2x@v7.15.png) -2px -160px
+    no-repeat;
+  background-size: 40px auto;
+}
+/* 旅行导航 */
+.travle_service {
+  width: 100%;
+  height: 198px;
+  margin-top: 30px;
+}
+.travle_service a {
+  color: #fff;
+  font-size: 14px;
+}
+.detail_service {
+  display: flex;
+  margin: 0 auto;
+  width: 94%;
+  height: 65px;
+  margin-bottom: 1px;
+}
+.travl_item1 a:nth-child(1) {
+  justify-content: flex-start;
+  position: relative;
+}
+.travl_item1 a:nth-child(1)::after {
+  /* 使用伪元素+绝对定位 实现背景图一直贴着某个角落 */
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 70px;
+  height: 30px;
+  content: "";
+  background: url(../images/grid-nav-items-hotel@v7.15.png) no-repeat;
+  background-size: 70px auto;
+}
+.travl_item1 a:nth-child(2) {
+  background: url(../images/grid-nav-items-minsu@v7.15.png) no-repeat 0 45px;
+  background-size: 37px auto;
+}
+.travl_item1 a:nth-child(3) {
+  color: #a05416;
+  background: url(../images/grid-nav-items-hot.png) no-repeat -13px -32px;
+  background-size: 241px auto;
+}
+
+.travl_item1 a:nth-child(1) {
+  flex: 10;
+  background-color: #fb7552;
+  border-radius: 10px 0 0 0;
+}
+.travl_item1 a:nth-child(2) {
+  flex: 7;
+  background-color: #fb7552;
+  margin: 0 1px;
+}
+.travl_item1 a:nth-child(3) {
+  flex: 14;
+  background-color: #ffc04b;
+  border-radius: 0 10px 0 0;
+}
+.travl_item2 a:nth-child(1) {
+  justify-content: flex-start;
+  background: url(../images/grid-nav-items-flight@v7.15.png) no-repeat 82px 31px;
+  background-size: 80px auto;
+}
+.travl_item2 a:nth-child(2) {
+  background: url(../images/grid-nav-items-train.png) no-repeat 0 39px;
+  background-size: 37px auto;
+}
+.travl_item3 a:nth-child(1) {
+  justify-content: flex-start;
+  background: url(../images/grid-nav-items-travel@v7.15.png) no-repeat 68px 18px;
+  background-size: 94px auto;
+}
+.travl_item3 a:nth-child(2) {
+  background: url(../images/grid-nav-items-dingzhi@v7.15.png) no-repeat 0 73%;
+  background-size: 61px auto;
+}
+.travle_service .travl_item2 a {
+  background-color: #53bced;
+}
+.travle_service .travl_item3 a {
+  background-color: #61d167;
+}
+
+.travl_item2 a:nth-child(1),
+.travl_item3 a:nth-child(1) {
+  flex: 10;
+}
+.travl_item2 a:nth-child(2),
+.travl_item3 a:nth-child(2) {
+  flex: 7;
+
+  margin: 0 1px;
+}
+.travl_item2 a:nth-child(3),
+.travl_item3 a:nth-child(3) {
+  flex: 7;
+}
+.travl_item2 a:nth-child(4),
+.travl_item3 a:nth-child(4) {
+  flex: 7;
+  margin-left: 1px;
+}
+.travl_item3 a:nth-child(1) {
+  border-radius: 0 0 0 10px;
+}
+.travl_item3 a:nth-child(4) {
+  border-radius: 0 0 10px 0;
+}
+.travle_service a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.travle_service a span:nth-child(1) {
+  margin-left: 15px;
+}
+/* 生活服务 */
+.life_service {
+  display: flex;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  height: 110px;
+  width: 94%;
+  margin-left: 3%;
+}
+.life_service a {
+  display: flex;
+  width: 20%;
+  height: 55px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: #222;
+}
+.life_service a span:nth-child(1) {
+  width: 28px;
+  height: 28px;
+}
+.life_service a span:nth-child(1) {
+  background: url(../images/un_ico_subnav2x@v7.152.png) no-repeat -2px -3px;
+  background-size: 28px auto;
+}
+.life_service a:nth-child(2) span:nth-child(1) {
+  background: url(../images/un_ico_subnav2x@v7.152.png) no-repeat -2px -31px;
+  background-size: 28px auto;
+}
+.life_service a:nth-child(3) span:nth-child(1) {
+  background: url(../images/un_ico_subnav2x@v7.152.png) no-repeat -2px -58px;
+  background-size: 28px auto;
+}
+.life_service a:nth-child(4) span:nth-child(1) {
+  background: url(../images/un_ico_subnav2x@v7.152.png) no-repeat -2px -86px;
+  background-size: 28px auto;
+}
+.life_service a:nth-child(5) span:nth-child(1) {
+  background: url(../images/un_ico_subnav2x@v7.152.png) no-repeat -2px -115px;
+  background-size: 28px auto;
+}
+.life_service a:nth-child(6) span:nth-child(1) {
+  background: url(../images/un_ico_subnav2x@v7.152.png) no-repeat -2px -144px;
+  background-size: 28px auto;
+}
+.life_service a:nth-child(7) span:nth-child(1) {
+  background: url(../images/un_ico_subnav2x@v7.152.png) no-repeat -2px -173px;
+  background-size: 28px auto;
+}
+.life_service a:nth-child(8) span:nth-child(1) {
+  background: url(../images/un_ico_subnav2x@v7.152.png) no-repeat -2px -200px;
+  background-size: 28px auto;
+}
+.life_service a:nth-child(9) span:nth-child(1) {
+  background: url(../images/un_ico_subnav2x@v7.152.png) no-repeat -2px -227px;
+  background-size: 28px auto;
+}
+.life_service a:nth-child(10) span:nth-child(1) {
+  background: url(../images/un_ico_subnav2x@v7.152.png) no-repeat -2px -254px;
+  background-size: 28px auto;
+}
