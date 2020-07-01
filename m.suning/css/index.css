@@ -1,19 +1,134 @@
 html {
   background-color: #007aff;
 }
-@media screen and (min-width: 750px) {
-  html {
-    font-size: 50px;
-  }
+html {
+  font-size: 50px;
 }
 @media screen and (min-width: 320px) {
   html {
     font-size: 21.33333333px;
   }
 }
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 26.66666667px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 27.6px;
+  }
+}
+@media screen and (min-width: 424px) {
+  html {
+    font-size: 28.26666667px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 50px;
+  }
+}
 body {
-  width: 100%;
   min-width: 320px;
-  max-width: 750px;
+  width: 15rem;
   margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, STHeiTi, sans-serif;
+  background: #f2f2f2;
+}
+header {
+  width: 100%;
+  height: 3.6rem;
+  background-color: #c70000;
+}
+header .login {
+  display: grid;
+  grid-template-columns: 0.72rem 9rem 0.72rem;
+  width: 13.64rem;
+  height: 1.76rem;
+  margin: 0 0.68rem;
+  justify-content: space-between;
+  align-content: center;
+}
+header .login img:nth-child(1) {
+  width: 0.72rem;
+}
+header .login a:nth-child(2) img:nth-child(1) {
+  width: 9rem;
+}
+header .search {
+  position: relative;
+  width: 14.04rem;
+  height: 1.76rem;
+}
+header .search form {
+  height: 1.28rem;
+}
+header .search input {
+  background-color: #fff;
+  border-radius: 1rem;
+  margin: 0 0.48rem;
+  width: 14.04rem;
+  height: 1.28rem;
+  outline: 0;
+  border: 0;
+  padding-left: 1.2rem;
+  font-size: 0.56rem;
+}
+header .search a::before {
+  position: absolute;
+  content: "";
+  left: 0.72rem;
+  top: 0.52rem;
+  width: 0.72rem;
+  height: 0.72rem;
+  background: url(../image/search.png);
+  background-size: 0.72rem;
+}
+.banner {
+  width: 15rem;
+  height: 5.2rem;
+  background: url(../image/banner.png) no-repeat;
+  background-size: 15rem 5.2rem;
+}
+.banner .ad img {
+  width: 15rem;
+  padding: 0 0.48rem;
+  height: 5.2rem;
+}
+.middle_recommend {
+  display: grid;
+  width: 15rem;
+  height: 4.2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.middle_recommend img {
+  width: 5rem;
+  height: 4.2rem;
 }
