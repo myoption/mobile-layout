@@ -3,7 +3,7 @@ html {
 }
 // 在index中导入common.less
 @import "common";
-
+@screen: 50;
 body {
   min-width: 320px;
   // 宽度会缩放
@@ -68,16 +68,20 @@ header .search a::before {
 }
 // banner样式
 .banner {
+  position: relative;
   width: 15rem;
   height: 260rem / 50;
   background: url(../image/banner.png) no-repeat;
   background-size: 15rem 260rem / 50;
+  overflow: hidden;
 }
 
 .banner .ad img {
+  position: absolute;
+  bottom: 0;
   width: 750rem / 50;
   padding: 0 24rem / 50;
-  height: 260rem / 50;
+  height: 368rem / 50;
 }
 // 中推荐
 .middle_recommend {
@@ -89,4 +93,20 @@ header .search a::before {
 .middle_recommend img {
   width: 250rem / 50;
   height: 210rem / 50;
+}
+// 导航
+nav {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+}
+nav a {
+  display: grid;
+  width: 150rem / 50;
+  height: 142rem / @screen;
+  font-size: 22rem / @screen;
+  justify-content: center;
+  align-content: center;
+}
+nav a img {
+  width: 84rem / @screen;
 }
