@@ -119,12 +119,40 @@ header .search a::before {
   background-size: 15rem 5.2rem;
   overflow: hidden;
 }
-.banner .ad img {
+.banner ul {
   position: absolute;
   bottom: 0;
+  width: 6080px;
+  left: -15rem;
+}
+.banner ul li {
+  float: left;
+}
+.banner ul li img {
   width: 15rem;
   padding: 0 0.48rem;
   height: 7.36rem;
+}
+.banner ol {
+  position: absolute;
+  list-style: none;
+  left: 20%;
+  top: 4.2rem;
+  margin: 0;
+  padding: 0;
+}
+.banner ol li {
+  float: left;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 0.2rem;
+  background-color: #666;
+  opacity: 0.5;
+  margin: 0 0.2rem;
+}
+.banner ol .current {
+  width: 0.7rem;
+  background-color: #fff;
 }
 .middle_recommend {
   display: grid;
