@@ -8,7 +8,10 @@
   <title>京东</title>
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/index.css" />
-</head>
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <script src="js/swiper.min.js"></script>
+  <script src="js/index.js"></script>
+<head>
 
 <body>
   <!-- 顶部 -->
@@ -32,7 +35,21 @@
   <div class="banner_area">
     <!-- <div class="bgc"></div> -->
     <div class="banner">
-      <img src="upload/banner1.jpg" alt="" />
+       <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="upload/ad1.dpg" alt=""></div>
+        <div class="swiper-slide"><img src="upload/ad2.dpg" alt=""></div>
+        <div class="swiper-slide"><img src="upload/ad3.dpg" alt=""></div>
+        <div class="swiper-slide"><img src="upload/ad4.dpg" alt=""></div>
+        <div class="swiper-slide"><img src="upload/ad5.dpg" alt=""></div>
+      <//div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
     </div>
     <!-- 导航 -->
     <div class="nav_content">
